@@ -29,6 +29,7 @@ jobs:
           npm install
           npm run build
           echo "Clone gh-pages 分支后, 通过 HTTP Server 服务即可. 必须在根目录." > ./build/readme.md
+          echo "st.ladhub.me" > ./build/CNAME
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
